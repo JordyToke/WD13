@@ -1,0 +1,26 @@
+:root {
+  font-family: 'Baloo Bhaijaan 2', Tahoma, Arial, sans-serif;
+  color: #ddd;
+  background-color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Scheherazade+New', Georgia, serif;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 0 8vw;
+}
+
+.nav-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  a {
+    text-decoration: none;
+    font-size: larger;
+  }
+}
