@@ -1,26 +1,102 @@
+/* all rules including light theme */
 :root {
   font-family: 'Baloo Bhaijaan 2', Tahoma, Arial, sans-serif;
-  color: #ddd;
-  background-color: #222;
+  cursor: crosshair;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Scheherazade+New', Georgia, serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+/* dark theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --bg-acc-dark: #010409;
+    --bg-acc-light: #151b23;
+    --font-color: seashell;
+  }
+
+  a {
+    color: #66b;
+  }
+}
+
+/* specific styling */
+
+body {
+  margin: 0 auto;
+  color: var(--font-color);
+  background-color: var(--bg);
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  padding: 0 8vw;
+  align-items: center;
+  padding: 0 5vw;
+  a {
+    text-decoration: none;
+    color: var(--font-color);
+  }
+}
+
+.header-item {
+  animation: slideInFromLeft 1s ease-out 0.5s;
+}
+
+.logo {
+  width: auto;
+  height: 64px;
+}
+
+.wd13 {
+  fill: seashell;
+  &:hover {
+    fill: orange;
+  }
 }
 
 .nav-bar {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: stretch;
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color-accent);
   a {
+    flex: 1;
     text-decoration: none;
+    text-align: center;
+    min-width: 36px;
+    color: #99e;
     font-size: larger;
+    &:hover {
+      color: var(--font-color);
+      background-color: var(--bg-acc-dark);
+      transition-duration: 300ms;
+    }
   }
+}
+
+.content {
+  height: 2000px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
 }

@@ -5,7 +5,7 @@
     <!-- page title -->
     <title>WD13 | Generation Australia</title>
     <!-- page favicon -->
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/wd13.svg" type="image/x-icon" />
     <!-- page meta -->
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,18 +21,29 @@
   <body>
     <!-- Header -->
     <header>
-      <img src="./images/wd13.png" alt="WD13 logo" />
-      <h1>WD13 | Generation Australia</h1>
+      <!-- embedded SVG with object -->
+      <object class="logo header-item" data="./images/wd13.svg" type="image/svg+xml">
+        <img src="./images/wd13.svg" alt="WD13 logo">
+      </object>
+      <h1 class="header-item">
+        <a href="https://australia.generation.org/programs/web-development/">WD13 | Generation Australia</a>
+      </h1>
+      <script type="module" src=""></script>
     </header>
     <!-- Navigation Bar -->
     <nav class="nav-bar">
       <a href="./index.html">Home</a>
       <a href="./about.html">About</a>
+      <a href="./class.html">Class</a>
       <a href="./topics.html">Topics</a>
     </nav>
     <!-- Main -->
-    <main></main>
+    <main>
+      <div class="content"></div>
+    </main>
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+      <small>Jordy Toke 2024 &copy;</small>
+    </footer>
   </body>
 </html>
