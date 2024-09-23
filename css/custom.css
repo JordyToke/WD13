@@ -4,34 +4,73 @@
   /* pen font */
   font-family: "Reenie Beanie", cursive;
   /* pen colour */
-  color: #00aa;
+  --pen-color: #118a;
+  color: var(--pen-color);
   /* font size */
-  font-size: small;
-  line-height: 113%;
+  font-size: medium;
+  hr {
+    border: 1px solid ;
+  }
 }
 
 .a4 {
-  margin: 0 auto;
+  margin: 5mm auto;
   width: 210mm;
   height: 297mm;
 }
 
 .paper {
-  --bg-color: linen;
+  /* paper colour */
+  --paper-color: linen;
+  /* page shadow */
   box-shadow: 1px 1px 2px black;
-  background-color: linen;
+  /* paper styling */
+  --paper: linear-gradient(
+    90deg, var(--paper-color) 1mm, var(--paper-color)
+  );
+  --paper-fold: linear-gradient(
+    220deg,
+    #0002 8mm,
+    var(--paper-color) 8.5mm
+  );
 }
 
+.ruled {
+  /* ruler colour */
+  --ruled-color: #33c4;
+  /* ruled thickness */
+  --ruled-width: 0.5pt;
+  /* line height !important for font to line up */
+  --lh: calc(
+    2ex + var(--ruled-width)
+  );
+  /* line height applied */
+  line-height: var(--lh);
+
+  /* distance from top rule begins */
+  --top-pad: calc(var(--lh)*4);
+
+  /* ruled pattern */
+  --ruled: linear-gradient(var(--paper-color), transparent var(--top-pad)),
+  repeating-linear-gradient(
+    transparent,
+    transparent 2ex,
+    var(--ruled-color) 2ex,
+    var(--ruled-color) var(--lh)
+  );
+  /* applied ruled styling */
+  background-image: var(--ruled);
+  padding-top: var(--top-pad);
+}
 
 .margin {
   /* margin colour */
-  --margin-color: red;
+  --margin-color: #e22b;
   /* margin distance from side */
-  --margin-distance: 8mm;
-  /* margin side */
-  --margin-side: right;
+  --margin-distance: 10mm;
+  /* margin direction */
   /* margin thickness */
-  --margin-width: 1px;
+  --margin-width: 1pt;
   /* margin pattern */
   --margin: linear-gradient(
     90deg,
@@ -41,22 +80,13 @@
     transparent calc(var(--margin-distance) + var(--margin-width))
   );
   background-image: var(--margin);
-  padding: var(--margin-distance);
-}
-
-.ruled {
-  /* ruler colour */
-  --ruled-color: skyblue;
-  /* ruled pattern */
-  --ruled: repeating-linear-gradient(transparent, transparent 2ex, var(--ruled-color) 2.1ex, transparent 1em);
-  /* ruler styling */
-  background-image: var(--ruled);
-  padding: 0 ;
+  padding-left: calc(var(--margin-distance) + 2mm);
 }
 
 .ruled.margin {
   background-image:
   var(--margin),
-  var(--ruled);
-  padding: var(--margin-distance);
+  var(--ruled),
+  var(--paper);
+  background-blend-mode: multiply;
 }
