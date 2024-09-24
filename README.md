@@ -17,17 +17,18 @@ I created this repository for WD13 peers to collaborate on a central page that w
 ## Git
 <details><summary>Git TODO</summary>
 
-- [ ] add a brief description of Git
-- [x] create site page
+- [x] add a brief description of Git
+- [ ] create site page
 </details>
+
+Git is a widely used version control system, it tracks versions and history of files. It is often used to help maintain source code by programmers who are developing software collaboratively.
 <!-- Git END -->
 
 <!-- GitHub START -->
 ## GitHub
 <details><summary>GitHub TODO</summary>
 
-- [x] add GitHub Markdown subsection
-- [ ] add GitHub summary
+- [ ] GitHub summary
 - [ ] create GitHub page
 - [ ] add GitHub information to README
 </details>
