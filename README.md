@@ -1,4 +1,4 @@
-# Generation Australia | Web Development 13
+# [Generation Australia | Web Development 13](https://jordytoke.github.io/WD13/)
 
 I created this repository for WD13 peers to collaborate on a central page that we may each link to our own work and project sites. I will also try to update this page to provide documentation and resources for topics we cover throughout the course.
 
