@@ -45,7 +45,7 @@ GitHub is an online platform for hosting Git repositories to easily share, colla
 - [ ] create HTML page
 - [ ] add information to README
 </details>
-HyperText Markup Language (HMTL) is the primary structure all website content eventuates to.
+HMTL (HyperText Markup Language) is the primary structure all website content eventuates to.
 <!-- HTML END -->
 
 ## Cascading Style Sheets (CSS)<!-- CSS START -->
@@ -55,7 +55,7 @@ HyperText Markup Language (HMTL) is the primary structure all website content ev
 - [ ] create HTML page
 - [ ] add information to README
 </details>
-Cascading StyleSheets are the flavour or styling applied to the websites (HTML) content.
+CSS (Cascading StyleSheets) are the flavour or styling applied to the websites (HTML) content.
 
 ## Javascript (js)
 <!-- JS START -->
