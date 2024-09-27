@@ -116,6 +116,12 @@ svg {
   align-content: center;
 }
 
+.calendar {
+  width: fit-content;
+  margin: 5vw auto;
+  filter: invert(1) hue-rotate(180deg) opacity(0.8);
+}
+
 footer {
   display: flex;
   justify-content: space-evenly;
