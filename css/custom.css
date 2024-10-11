@@ -51,7 +51,7 @@
   --top-pad: calc(var(--lh)*4);
 
   /* ruled pattern */
-  --ruled: linear-gradient(var(--paper-color), transparent var(--top-pad)),
+  --ruled: linear-gradient(transparent, transparent var(--top-pad)),
   repeating-linear-gradient(
     transparent,
     transparent 2ex,
