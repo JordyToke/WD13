@@ -42,6 +42,10 @@ body {
   }
 }
 
+aside {
+  width: 20%;
+}
+
 header {
   display: flex;
   flex-flow: row nowrap;
@@ -74,11 +78,8 @@ svg {
   }
 }
 
-.nav-bar {
+.nav {
   display: flex;
-  justify-content: stretch;
-  position: sticky;
-  top: 0;
   background-color: var(--bg);
   a {
     flex: 1;
@@ -93,6 +94,19 @@ svg {
       transition-duration: 300ms;
     }
   }
+}
+
+.vert {
+  flex-direction: column;
+  align-content: space-between;
+
+}
+
+.hori {
+  flex-direction: row;
+  justify-content: stretch;
+  position: sticky;
+  top: 0;
 }
 
 .card-container {
