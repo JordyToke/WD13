@@ -2,14 +2,14 @@
 
 .biro {
   /* pen font */
-  font-family: "Reenie Beanie", cursive;
+  font-family: 'Reenie Beanie', cursive;
   /* pen colour */
   --pen-color: #118a;
   color: var(--pen-color);
   /* font size */
   font-size: medium;
   hr {
-    border: 1px solid ;
+    border: 1px solid;
   }
 }
 
@@ -25,14 +25,8 @@
   /* page shadow */
   box-shadow: 1px 1px 2px black;
   /* paper styling */
-  --paper: linear-gradient(
-    90deg, var(--paper-color) 1mm, var(--paper-color)
-  );
-  --paper-fold: linear-gradient(
-    220deg,
-    #0002 8mm,
-    var(--paper-color) 8.5mm
-  );
+  --paper: linear-gradient(90deg, var(--paper-color) 1mm, var(--paper-color));
+  --paper-fold: linear-gradient(220deg, #0002 8mm, var(--paper-color) 8.5mm);
 }
 
 .ruled {
@@ -41,23 +35,16 @@
   /* ruled thickness */
   --ruled-width: 0.5pt;
   /* line height !important for font to line up */
-  --lh: calc(
-    2ex + var(--ruled-width)
-  );
+  --lh: calc(2ex + var(--ruled-width));
   /* line height applied */
   line-height: var(--lh);
 
   /* distance from top rule begins */
-  --top-pad: calc(var(--lh)*4);
+  --top-pad: calc(var(--lh) * 4);
 
   /* ruled pattern */
   --ruled: linear-gradient(transparent, transparent var(--top-pad)),
-  repeating-linear-gradient(
-    transparent,
-    transparent 2ex,
-    var(--ruled-color) 2ex,
-    var(--ruled-color) var(--lh)
-  );
+    repeating-linear-gradient(transparent, transparent 2ex, var(--ruled-color) 2ex, var(--ruled-color) var(--lh));
   /* applied ruled styling */
   background-image: var(--ruled);
   padding-top: var(--top-pad);
@@ -84,9 +71,6 @@
 }
 
 .ruled.margin {
-  background-image:
-  var(--margin),
-  var(--ruled),
-  var(--paper);
+  background-image: var(--margin), var(--ruled), var(--paper);
   background-blend-mode: multiply;
 }

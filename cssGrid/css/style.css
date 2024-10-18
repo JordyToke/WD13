@@ -8,12 +8,11 @@ html {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 1fr 0.5fr repeat(3, 3fr);
   grid-template-areas:
-  'header header header header header header header header'
-  'aside . . . . . . .'
-  'aside . post post post post post .'
-  'aside . post post post post post .'
-  'aside . post post post post post .'
-  ;
+    'header header header header header header header header'
+    'aside . . . . . . .'
+    'aside . post post post post post .'
+    'aside . post post post post post .'
+    'aside . post post post post post .';
   background-color: gray;
   height: 100%;
   margin: 0;
