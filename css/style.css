@@ -1,10 +1,12 @@
 /* all rules including light theme */
 :root {
   font-family: 'Baloo Bhaijaan 2', Tahoma, Arial, sans-serif;
+  color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Scheherazade+New', Georgia, serif;
+  margin: 0;
 }
 
 a {
@@ -31,19 +33,14 @@ a {
 
 /* specific styling */
 
+svg {
+  transform: scale(1, -1);
+}
+
 body {
   margin: 0 auto;
   color: var(--font-color);
   background-color: var(--bg);
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-200%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
 }
 
 aside {
@@ -54,8 +51,7 @@ header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 5vw;
+  padding: 1rem 5rem;
   a {
     text-decoration: none;
     color: var(--font-color);
@@ -66,18 +62,12 @@ header {
   }
 }
 
-.header-item {
-  animation: slideInFromLeft 1s ease-out 0.5s;
-}
 
-svg {
-  width: auto;
+
+.header-item {
   height: 64px;
-  fill: seashell;
-  &:hover {
-    fill: orange;
-    transition: all 300ms ease-out;
-  }
+  width: auto;
+  align-content: center;
 }
 
 .nav {
